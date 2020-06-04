@@ -1,0 +1,31 @@
+input{
+	padding: 17px;
+	background-color: black;
+	color: white;
+	transition: 0.6s;
+}
+
+input:hover{
+	background-color: #696969;
+	color: white;
+}
+
+.episodeTitle{
+	display:inline-block;
+	width:45vw;
+}
+
+
+h6{
+	display: block;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: .06em;
+	text-align: center;
+	font-weight: 300;
+	margin: 30px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding-top: 5vh;
+}

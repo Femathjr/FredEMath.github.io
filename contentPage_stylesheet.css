@@ -1,0 +1,102 @@
+/* -------------------------
+
+Static content elements
+
+----------------------------*/
+
+.fullContentWrapper{
+	display: block;
+	float:left;
+}
+
+h4{
+	display: block;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: .06em;
+	text-align: center;
+	font-weight: 300;
+	margin: 30px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding-top: 5vh;
+}
+
+
+/* -------------------------
+
+Content Page Body Desktop
+
+REMEMBER TO CHANGE MOBILE TOO
+
+----------------------------*/
+@media screen and (min-width: 851px) and (max-width: 100000px){
+
+	.projectContent{
+		width: 65vw;
+
+	}
+
+	.projectContentVideo{
+		height: 36.5625vw;
+	}
+
+	.pageDescriptionDesktop{
+		display: inline-block;
+		position: sticky;
+		margin-top: 70px;
+		z-index: 100;
+		left: 75vw;
+
+		width: 19.42071197vw;
+	}
+
+	.pageDescriptionMobile{
+		position: absolute;
+		max-width: 100px;
+		left: -1000px;
+	}
+
+}
+
+/* -------------------------
+
+Content Page Body Mobile 
+
+REMEMBER TO CHANGE DESKTOP TOO
+
+----------------------------*/
+
+@media screen and (min-width: 1px) and (max-width: 850px){
+
+	h4{
+		margin-top: 30px;
+	}
+
+	.projectContent{
+		width: 70vw;
+	}
+
+	.projectContentVideo{
+		height: 39.375vw;
+	}
+
+	.pageDescriptionMobile{
+		display: inline-block;
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+
+	.pageDescriptionDesktop{
+		position: absolute;
+		max-width: 100px;
+		left: -1000px;
+	}
+
+
+
+
+
+}
+

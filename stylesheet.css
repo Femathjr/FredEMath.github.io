@@ -1,0 +1,507 @@
+/* --------------------------------------------------------------
+   _____                          
+  / ____|                         
+ | |     __ _ _ ____   ____ _ ___ 
+ | |    / _` | '_ \ \ / / _` / __|
+ | |___| (_| | | | \ V / (_| \__ \
+  \_____\__,_|_| |_|\_/ \__,_|___/
+                                  
+                                  
+------------------------------------------------------------------*/
+
+body{
+	font-family: 'Noto Sans SC', sans-serif;
+	background-color: #FFFFFF;
+}
+
+
+#canvas{
+	display:inline-block;
+	width: 95%;
+	margin: 10px auto;
+	margin-top: 5px;
+	padding: 10px;
+	padding-top: 5px;
+}
+
+a {
+	color:#696969;
+	text-decoration: none;
+	transition: 0.6s;
+
+	} 
+/* Unvisited link  */
+
+a:visited {color:#696969;} /* Visited link    */
+a:hover {color:#C0C0C0;}   /* Mouse over link */
+a:active {color:#696969;}  /* Selected link   */
+
+
+.activePage {color: black;}
+.activePage:visited{color: black;}
+.activePage:hover{color: #C0C0C0;}
+
+
+
+/* --------------------------------------------------------------
+  _    _                _               
+ | |  | |              | |              
+ | |__| | ___  __ _  __| | ___ _ __ ___ 
+ |  __  |/ _ \/ _` |/ _` |/ _ \ '__/ __|
+ | |  | |  __/ (_| | (_| |  __/ |  \__ \
+ |_|  |_|\___|\__,_|\__,_|\___|_|  |___/
+                                        
+                                        
+------------------------------------------------------------------*/
+
+/* -------------------------
+
+Page Header Desktop
+
+REMEMBER TO CHANGE MOBILE TOO
+
+----------------------------*/
+
+@media screen and (min-width: 851px) and (max-width: 100000px){
+
+
+
+	@media screen and (min-width: 851px) and (max-width: 1045px){
+		.siteHeader{
+
+		}
+
+		.desktopMenu{
+			display: inline-block;
+			text-align: left;
+			margin-top: 30px;
+			width: 50%;
+			white-space: nowrap;
+			transform: scale(0.95);
+		}
+
+		.socialMedia{
+			margin-left: 20px;
+			margin: auto;
+			text-align: center;
+		}
+	}
+
+	@media screen and (min-width: 1046px) and (max-width: 100000px){
+		.siteHeader{
+			float:right;
+
+		}
+
+		.desktopMenu{
+			display: inline-block;
+			text-align: left;
+			margin-top: 45px;
+			width: 50%;
+			white-space: nowrap;
+		}
+
+		.socialMedia{
+			margin-left: 20px;
+			margin-bottom: 5px;
+			text-align:left;
+		}
+
+	}
+
+
+
+
+	.socialMediaButton{
+	}
+
+
+	.desktopMenuItem{
+		font-size: 1em;
+		margin-left: 15px;
+	}
+
+	.mobileMenu{
+		position: absolute;
+		left: -1000px;
+	}
+
+
+	.menuContent{
+		display: none;
+		text-align: center;
+	}
+
+	.artistName{
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: 10px;
+	}
+
+	.siteLogo{
+		display: inline-block;
+		width: 124px;
+		height: 124px;
+		vertical-align: middle;
+		margin-left: 10px;
+
+	}
+
+	@font-face{
+		font-family: 'Live';
+		src: url('Live-Regular.otf')
+		format('opentype');
+	}
+
+	h1{
+		font-family: 'Live', sans-serif;
+		font-size: 2.5em;
+		margin: 0;
+		letter-spacing: .06em;
+		position: relative;
+	}
+
+	h2{
+		font-size: 1.5em;
+		margin: 0;
+		position: relative;
+
+		font-size: 14px;
+		line-height: 1.6em;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: .06em;
+		text-align: center;
+		font-weight: 300;
+	}
+
+
+
+}
+
+/* -------------------------
+
+Page Header Mobile
+
+REMEMBER TO CHANGE DESKTOP TOO
+
+----------------------------*/
+
+@media screen and (min-width: 1px) and (max-width: 850px){
+
+	.siteHeader{
+		font-family: 'Noto Sans SC', sans-serif;
+		text-align: center;
+	}
+
+	.artistName{
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: 10px;
+	}
+
+	.siteLogo{
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 40px;
+		max-height: 40px;
+	}
+
+	@font-face{
+		font-family: 'Live';
+		src: url('Live-Regular.otf')
+		format('opentype');
+	}
+
+	h1{
+		font-family: 'Live', sans-serif;
+		font-size: 1.2em;
+		position: relative;
+	}
+
+	h2{
+		position: absolute;
+		left: -1000px;
+		
+	}
+
+	.desktopTitleBreak{
+		position: absolute;
+		left: -1000px;
+	}
+
+
+	/* -------------------------
+
+	Mobile Menu
+
+	----------------------------*/
+
+		.desktopMenu{
+			position: absolute;
+			left: -1000px;
+			max-width: 100px;
+			}
+
+		.mobileMenu{
+			z-index: 100;
+			text-align: left;
+
+			--translate: -100%;
+			background-color: #FFFFFF;
+			width: 220px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100vh;
+
+			-webkit-transform: translateX(var(--translate));
+			        transform: translateX(var(--translate));
+			-webkit-transition: -webkit-transform 0.25s;
+			transition: -webkit-transform 0.25s;
+			transition: transform 0.25s;
+			transition: transform 0.25s, -webkit-transform 0.25s;
+			}
+
+		.mobileMenu__button {
+			cursor: pointer;
+			position: absolute;
+			height: 35px;
+			left: 100%;
+			padding: 20px;
+			top: 0;
+			width: 45px;
+			}
+
+		.mobileMenu__button .line {
+			width: 70%;
+			height: 3px;
+			margin: 5px auto;
+			padding-right: 5px;
+			background-color: #696969;
+			-webkit-transition: opacity 0.25s, -webkit-transform 0.25s;
+			transition: opacity 0.25s, -webkit-transform 0.25s;
+			transition: transform 0.25s, opacity 0.25s;
+			transition: transform 0.25s, opacity 0.25s, -webkit-transform 0.25s;
+			}	
+
+		.mobileMenu--open {
+			--translate: 0;
+			}
+
+		.mobileMenu--open .line:nth-of-type(1) {
+			-webkit-transform: rotate(45deg) translate(-1px, 26px);
+			}
+
+
+		.mobileMenu--open .line:nth-of-type(2) {
+			opacity: 0;
+			}
+
+		.mobileMenu--open .line:nth-of-type(3) {
+			-webkit-transform: rotate(-45deg) translate(-15px, -13px);
+			}
+
+		.menu__content {
+			padding: 10px;
+			width: 200px;
+			}
+
+		.menu__options{
+			list-style: none;
+			padding: 0;
+
+		}
+
+		.menu__option {
+			background: linear-gradient(160deg, #fff, #fff 30%, var(--color));
+			cursor: pointer;
+			padding: 4px;
+			}
+
+		.mobileMenuThumb{
+			width: 200px;
+		}
+
+
+}
+
+
+/* --------------------------------------------------------------
+  ____            _       
+ |  _ \          | |      
+ | |_) | ___   __| |_   _ 
+ |  _ < / _ \ / _` | | | |
+ | |_) | (_) | (_| | |_| |
+ |____/ \___/ \__,_|\__, |
+                     __/ |
+                    |___/ 
+------------------------------------------------------------------*/
+
+/* -------------------------
+
+Homepage Body Desktop
+
+----------------------------*/
+
+@media screen and (min-width: 851px) and (max-width: 100000px){
+
+	body{
+		padding: 30px;
+		font-family: 'Noto Sans SC', sans-serif;
+		text-align: center;
+	}
+
+
+	/* -------------------------
+
+	Thumbnails
+
+	**MAX IMAGE SIZE IS 8.4MB**
+
+	----------------------------*/
+
+	.wrapper{
+		width: 103%;
+		border-left: -3%;
+		border-top: -3%;
+	}
+
+	/* -------------------------
+
+	This is for each thumbnail
+
+	----------------------------*/
+
+	.project{
+		position: relative;
+		float: left;
+		margin-left: 2.91262136%;
+		margin-top: 3%;
+		width: 30.42071197%;
+		cursor: pointer;
+		-webkit-transform: translatez(0);
+		display: inline-block;
+
+		opacity: 1;
+		transition-duration: 0.5s;
+	}
+
+	.project:hover{
+		opacity: 0.6;
+		transform: scale(1.1);
+
+		}
+
+
+
+		.thumbnailImg{
+			margin-left: 2.91262136%;
+			margin-top: 3%;
+			width: 100%;
+			object-fit: fill;
+			cursor: pointer;
+			-webkit-transform: translatez(0);
+
+			overflow: hidden;	
+		}
+
+
+
+
+		h3{
+			font-size: 14px;
+			line-height: 1.6em;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: .06em;
+			text-align: center;
+			font-weight: 300;
+		}
+
+}
+
+
+/* -------------------------
+
+Homepage Body Mobile
+
+----------------------------*/
+
+@media screen and (min-width: 1px) and (max-width: 850px){
+
+	body{
+		padding: 30px;
+		font-family: 'Noto Sans SC', sans-serif;
+		text-align: center;
+	}
+
+
+	.project{
+		position: relative;
+		float: left;
+		margin-left: 2.91262136%;
+		margin-top: 3%;
+		width: 45.42071197%;
+		cursor: pointer;
+		-webkit-transform: translatez(0);
+		display: inline-block;
+	}
+
+	.thumbnailImg{
+			margin-left: 2.91262136%;
+			margin-top: 3%;
+			width: 100%;
+			object-fit: fill;
+			cursor: pointer;
+			-webkit-transform: translatez(0);
+
+			overflow: hidden;	
+		}
+
+
+		h3{
+			font-size: 14px;
+			line-height: 1.6em;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: .06em;
+			text-align: center;
+			font-weight: 300;
+		}
+
+}
+
+/* --------------------------------------------------------------
+  ______          _            
+ |  ____|        | |           
+ | |__ ___   ___ | |_ ___ _ __ 
+ |  __/ _ \ / _ \| __/ _ \ '__|
+ | | | (_) | (_) | ||  __/ |   
+ |_|  \___/ \___/ \__\___|_|   
+                               
+                               
+------------------------------------------------------------------*/
+
+#footer{
+	display:block;
+	margin:auto;
+	bottom: 0;
+	width: 100%;
+
+	min-height: 2.5rem;
+
+}
+
+h5{
+		font-size: 1.5em;
+		margin: 0;
+
+		font-size: 14px;
+		line-height: 1.6em;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: .06em;
+		text-align: center;
+		font-weight: 300;
+	}

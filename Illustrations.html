@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link href="stylesheet.css" rel="stylesheet">
+
+	<link href="contentPage_stylesheet.css" rel="stylesheet">
+
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap');
+	</style>
+
+
+</head>
+
+<!--------------------------------------------------------------
+  ____            _       
+ |  _ \          | |      
+ | |_) | ___   __| |_   _ 
+ |  _ < / _ \ / _` | | | |
+ | |_) | (_) | (_| | |_| |
+ |____/ \___/ \__,_|\__, |
+                     __/ |
+                    |___/ 
+------------------------------------------------------------------>
+
+
+<div id='canvas'>
+
+
+	<body>
+
+		<!----------------------------
+  __  __       _     _ _        __  __                  
+ |  \/  |     | |   (_) |      |  \/  |                 
+ | \  / | ___ | |__  _| | ___  | \  / | ___ _ __  _   _ 
+ | |\/| |/ _ \| '_ \| | |/ _ \ | |\/| |/ _ \ '_ \| | | |
+ | |  | | (_) | |_) | | |  __/ | |  | |  __/ | | | |_| |
+ |_|  |_|\___/|_.__/|_|_|\___| |_|  |_|\___|_| |_|\__,_|
+                                                                                                                   
+		------------------------------>
+
+		<div class="mobileMenu"><a class="mobileMenu__button">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div></a>
+
+		  <div class="menu__content">
+
+			<ul class="menu__options">
+
+				<li class="Personal_Work.html"> 
+					<a href="#"> Personal Work </a> 
+				</li>
+
+
+				<li class="menu__option">
+					<a href="Professional_Work_PassGate.html"> Professional Work </a>
+				</li>
+
+
+				<li class="menu__option">
+					<a href="About.html"> About </a>
+				</li>
+
+
+				<li class="menu__option">
+					<a href="Resume.html"> Resume </a>
+				</li>
+
+
+			</ul>
+		  </div>
+		</div>
+
+		<!-------------------------
+
+		Mobile Menu Javascript
+
+		--------------------------->
+
+		<script>
+
+			const root = document.documentElement
+			const OPEN_CLASS = 'mobileMenu--open'
+			const menu = document.querySelector('.mobileMenu')
+			const menuColors = menu.querySelector('.mobileMenu__option')
+			const menuBtn = menu.querySelector('.mobileMenu__button')
+
+
+			const addOffClick = (e, cb) => {
+			  const offClick = (evt) => {
+			    if (e !== evt) {
+			      cb()
+			      document.removeEventListener('click', offClick)
+			    }
+			  }
+			  document.addEventListener('click', offClick)
+			}
+
+			const handleClick = (e) => {
+			  const toggleMenu = () => menu.classList.toggle(OPEN_CLASS)
+			  if (!menu.classList.contains(OPEN_CLASS)) {
+			    toggleMenu()
+			    addOffClick(e, toggleMenu)
+			  }
+			}
+
+			menuBtn.addEventListener('click', handleClick)
+
+		</script>
+
+
+		<!-------------------------
+   _____ _ _         _    _                _           
+  / ____(_) |       | |  | |              | |          
+ | (___  _| |_ ___  | |__| | ___  __ _  __| | ___ _ __ 
+  \___ \| | __/ _ \ |  __  |/ _ \/ _` |/ _` |/ _ \ '__|
+  ____) | | ||  __/ | |  | |  __/ (_| | (_| |  __/ |   
+ |_____/|_|\__\___| |_|  |_|\___|\__,_|\__,_|\___|_|   
+                                                                                                             
+		--------------------------->
+
+
+		<div 
+
+			class='siteHeader' 
+			onclick="location.href='Personal_Work.html';" style="cursor: pointer;"
+
+			>
+
+			<div class='artistName'>
+				<h1>
+					fred e. math
+				</h1>
+
+				<h2>
+					Drawings that move. Stories with soul.
+				</h2>
+			</div>
+
+			<img class='siteLogo' src='LogoCropped.png'>
+
+		</div>
+
+
+
+		<!----------------------------
+  _____            _    _                __  __                  
+ |  __ \          | |  | |              |  \/  |                 
+ | |  | | ___  ___| | _| |_ ___  _ __   | \  / | ___ _ __  _   _ 
+ | |  | |/ _ \/ __| |/ / __/ _ \| '_ \  | |\/| |/ _ \ '_ \| | | |
+ | |__| |  __/\__ \   <| || (_) | |_) | | |  | |  __/ | | | |_| |
+ |_____/ \___||___/_|\_\\__\___/| .__/  |_|  |_|\___|_| |_|\__,_|
+                                | |                              
+                                |_|                                                        
+		------------------------------>
+
+<div class="desktopMenu">
+
+			<div class='socialMedia'>
+
+				<a class='socialMediaButton' href='https://www.instagram.com/justbutton/'>
+
+					<img src='socialMediaIcons/instagram-round.png' style="width:30px;height:30px;">
+
+				</a>
+
+
+
+				<a class='socialMediaButton' href='https://www.linkedin.com/in/fred-mathelier-0b1157144/'>
+
+					<img src='socialMediaIcons/linkedin-round.png' style="width:30px;height:30px;">
+
+				</a>
+
+
+
+				<a class='socialMediaButton' href='https://www.youtube.com/channel/UCRWg6DXQRdmUJwaez-n4KZg?view_as=subscriber'>
+
+					<img src='socialMediaIcons/youtube-round.png' style="width:30px;height:30px;">
+				</a>
+
+
+
+				<a class='socialMediaButton' href='https://vimeo.com/user71362569'>
+
+					<img src='socialMediaIcons/vimeo-round.png' style="width:30px;height:30px;">
+
+				</a>
+
+			</div>
+
+			<a class="desktopMenuItem" href="Personal_Work.html"> Personal Work </a>
+
+			<a class="desktopMenuItem" href="Professional_Work_PassGate.html"> Professional Work </a>
+
+			<a class="desktopMenuItem" href="About.html"> About </a>
+
+			<a class="desktopMenuItem" href="Resume.html"> Resume </a>
+
+		</div>
+
+		
+
+	<div class='desktopTitleBreak'>
+
+		<br><br><br>
+
+	</div>	
+
+
+	<!-------------------------
+
+  _____                    _____            _             _   
+ |  __ \                  / ____|          | |           | |  
+ | |__) |_ _  __ _  ___  | |     ___  _ __ | |_ ___ _ __ | |_ 
+ |  ___/ _` |/ _` |/ _ \ | |    / _ \| '_ \| __/ _ \ '_ \| __|
+ | |  | (_| | (_| |  __/ | |___| (_) | | | | ||  __/ | | | |_ 
+ |_|   \__,_|\__, |\___|  \_____\___/|_| |_|\__\___|_| |_|\__|
+              __/ |                                           
+             |___/                                            
+
+	--------------------------->
+
+		
+		<div class="pageDescriptionDesktop">
+
+			Drawing and painting that finds life without motion.
+
+		</div>	
+
+
+		<div class='fullContentWrapper'>
+
+			<h4>
+				Butterfly Bucket
+			</h4>
+
+
+			<img class='projectContent' src='Pages/Illustrations/IllustrationImages/ButterflyBucket.png'>
+
+
+			<h4>
+				Skeleton
+			</h4>
+
+
+			<img class='projectContent' src='Pages/Illustrations/IllustrationImages/6.TIFF'>
+
+
+			<h4>
+				City Limit
+			</h4>
+
+
+			<img class='projectContent' src='Pages/Illustrations/IllustrationImages/1.TIFF'>
+
+
+
+			<h4>
+				Sisyphus Karl (Tradewinds Concept)
+			</h4>
+
+
+			<img class='projectContent' src='Pages/Illustrations/IllustrationImages/4.TIFF'>
+
+
+			<h4>
+				Zero Summit
+			</h4>
+
+
+			<img class='projectContent' src='Pages/Illustrations/IllustrationImages/5.TIFF'>
+
+			<h4>
+				Warm Walk Home (Tradewinds Concept)
+			</h4>
+
+
+			<img class='projectContent' src='Pages/Illustrations/IllustrationImages/5.png'>
+
+			<h4>
+				Mural (Tradewinds Concept)
+			</h4>
+
+
+			<img class='projectContent' src='Pages/Illustrations/IllustrationImages/6.png'>
+
+			<h4>
+				Chasing a High (Tradewinds Concept)
+			</h4>
+
+
+			<img class='projectContent' src='Pages/Illustrations/IllustrationImages/7.TIFF'>
+
+			<h4>
+				Sinister Skeleton
+			</h4>
+
+
+			<img class='projectContent' src='Pages/Illustrations/IllustrationImages/3.TIFF'>
+
+			<h4>
+				Thwack!
+			</h4>
+
+
+			<img class='projectContent' src='Pages/Illustrations/IllustrationImages/7.png'>
+
+		</div>
+
+
+
+
+		
+	<!-------------------------
+
+	Thumbnail Stack on the Bottom
+
+	--------------------------->
+
+		<a class='project' href='ShortFilms.html'>
+
+			<div>
+
+				<img src='Pages/ShortFilms/Animated_Films_Stitched_v9.gif' class='thumbnailImg'>
+
+				<h3>
+
+					Short Films
+
+				</h3>
+
+			</div>
+
+		</a>
+
+
+
+		<a class='project' href='BiteSizeProjects.html'>
+
+			<div>
+
+				<img src='Pages/BiteSize/BiteSizeProjects_V1.gif' class='thumbnailImg'>
+
+				<h3>
+
+					Bite Size Projects
+
+				</h3>
+
+			</div>
+
+		</a>
+
+
+
+		<a class='project' href='Commissions.html'>
+
+			<div>
+
+				<img src='Pages/Commissions/TewwTales.gif' class='thumbnailImg'>
+
+				<h3>
+
+					Commissions
+
+				</h3>
+
+			</div>
+
+		</a>
+
+
+
+		<a class='project' href='Illustrations.html'>
+
+			<div>
+
+				<img src='Pages/Illustrations/IllustrationsGif_V2.gif' class='thumbnailImg'>
+
+				<h3>
+
+					Illustration
+
+				</h3>
+
+			</div>
+
+		</a>
+
+
+
+	
+	</body>
+
+
+</html>

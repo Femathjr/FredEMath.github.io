@@ -1,0 +1,23 @@
+.resume{
+	padding-top: 25px;
+}
+
+.resumeTitle{
+	padding-bottom: 25px;
+}
+
+
+
+.downloadButton{
+	padding: 17px;
+	background-color: black;
+	color: white;
+}
+
+.downloadButton:hover{
+	background-color: #696969;
+}
+
+.downloadButton:visited{
+	color: white;
+}
