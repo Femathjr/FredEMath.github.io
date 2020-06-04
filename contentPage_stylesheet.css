@@ -31,7 +31,7 @@ Content Page Body Desktop
 REMEMBER TO CHANGE MOBILE TOO
 
 ----------------------------*/
-@media screen and (min-width: 851px) and (max-width: 100000px){
+@media screen and (min-width: 951px) and (max-width: 100000px){
 
 	.projectContent{
 		width: 65vw;
@@ -68,7 +68,7 @@ REMEMBER TO CHANGE DESKTOP TOO
 
 ----------------------------*/
 
-@media screen and (min-width: 1px) and (max-width: 850px){
+@media screen and (min-width: 1px) and (max-width: 950px){
 
 	h4{
 		margin-top: 30px;
