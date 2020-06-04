@@ -1,4 +1,4 @@
-@media screen and (min-width: 1px) and (max-width: 850px){
+@media screen and (min-width: 1px) and (max-width: 950px){
 
 
 	.headshot{
@@ -28,7 +28,7 @@
 
 
 
-@media screen and (min-width: 851px) and (max-width: 100000px){
+@media screen and (min-width: 951px) and (max-width: 100000px){
 
 	.headshot{
 		width: 40vw;
