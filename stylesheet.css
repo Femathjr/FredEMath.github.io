@@ -62,11 +62,11 @@ REMEMBER TO CHANGE MOBILE TOO
 
 ----------------------------*/
 
-@media screen and (min-width: 851px) and (max-width: 100000px){
+@media screen and (min-width: 451px) and (max-width: 100000px){
 
 
 
-	@media screen and (min-width: 851px) and (max-width: 1045px){
+	@media screen and (min-width: 451px) and (max-width: 1045px){
 		.siteHeader{
 
 		}
@@ -187,7 +187,7 @@ REMEMBER TO CHANGE DESKTOP TOO
 
 ----------------------------*/
 
-@media screen and (min-width: 1px) and (max-width: 850px){
+@media screen and (min-width: 1px) and (max-width: 450px){
 
 	.siteHeader{
 		font-family: 'Noto Sans SC', sans-serif;
@@ -344,7 +344,7 @@ Homepage Body Desktop
 
 ----------------------------*/
 
-@media screen and (min-width: 851px) and (max-width: 100000px){
+@media screen and (min-width: 451px) and (max-width: 100000px){
 
 	body{
 		padding: 30px;
@@ -428,7 +428,7 @@ Homepage Body Mobile
 
 ----------------------------*/
 
-@media screen and (min-width: 1px) and (max-width: 850px){
+@media screen and (min-width: 1px) and (max-width: 450px){
 
 	body{
 		padding: 30px;
