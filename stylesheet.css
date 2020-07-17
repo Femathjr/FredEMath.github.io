@@ -355,6 +355,28 @@ Homepage Body Desktop
 
 	/* -------------------------
 
+	Demo Reel
+
+	----------------------------*/
+
+	.embed-container {
+		position: relative;
+		padding-bottom: 56.25%;
+		height: 0;
+		overflow: hidden;
+		max-width: 100%; 
+		}
+	
+	.embed-container iframe, .embed-container object, .embed-container embed { 
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%; }
+
+
+	/* -------------------------
+
 	Thumbnails
 
 	**MAX IMAGE SIZE IS 8.4MB**
@@ -436,6 +458,33 @@ Homepage Body Mobile
 		text-align: center;
 	}
 
+	/* -------------------------
+
+	Demo Reel
+
+	----------------------------*/
+
+	.embed-container {
+		position: relative;
+		padding-bottom: 56.25%;
+		height: 0;
+		overflow: hidden;
+		max-width: 100%; 
+		}
+	
+	.embed-container iframe, .embed-container object, .embed-container embed { 
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%; }
+		
+
+	/* -------------------------
+
+	Projects
+
+	----------------------------*/	
 
 	.project{
 		position: relative;
