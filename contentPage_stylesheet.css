@@ -91,10 +91,9 @@ REMEMBER TO CHANGE DESKTOP TOO
 	.pageDescriptionDesktop{
 		position: absolute;
 		max-width: 100px;
+		z-index: 1;
 		left: -1000px;
 	}
-
-
 
 
 
