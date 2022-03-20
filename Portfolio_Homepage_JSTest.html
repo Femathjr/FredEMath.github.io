@@ -2,17 +2,19 @@
 <html>
 
 <head>
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<link href="stylesheet.css" rel="stylesheet">
-
-	<link href="Pages/Professional_Work/ProfessionalWork.css" rel="stylesheet">
 
 
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap');
 	</style>
+
+	<script src="jquery-3.6.0.js"></script> 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
 </head>
@@ -33,7 +35,6 @@
 
 	<body>
 
-
 		<!----------------------------
   __  __       _     _ _        __  __                  
  |  \/  |     | |   (_) |      |  \/  |                 
@@ -53,13 +54,13 @@
 
 			<ul class="menu__options">
 
-				<li class="menu__option">
-					<a href="Professional_Work.html"> Professional Work </a>
+				<li class="menu__option"> 
+					<a class='activePage' href="Personal_Work.html"> Personal Work </a> 
 				</li>
 
 
-				<li class="menu__option"> 
-					<a href="Personal_Work.html"> Personal Work </a> 
+				<li class="menu__option">
+					<a href="Professional_Work.html"> Professional Work </a>
 				</li>
 
 
@@ -72,9 +73,12 @@
 					<a href="Resume.html"> Resume </a>
 				</li>
 
+				<li class="menu__option">
+					<a href="Professional_Work_PassGate.html"> Storyboards </a>
+				</li>
+
+
 			</ul>
-
-
 
 			<div class='socialMedia'>
 
@@ -108,9 +112,9 @@
 				</a>
 
 			</div>
+
 		  </div>
 		</div>
-
 
 		<!-------------------------
 
@@ -161,10 +165,11 @@
 		--------------------------->
 
 
+
 		<div 
 
 			class='siteHeader' 
-			onclick="location.href='Professional_Work.html';" style="cursor: pointer;"
+			onclick="location.href='Portfolio_Homepage.html';" style="cursor: pointer;"
 
 			>
 
@@ -230,14 +235,15 @@
 
 			</div>
 
-			<a class="desktopMenuItem" href="Professional_Work.html"> Professional Work </a>
-
 			<a class="desktopMenuItem" href="Personal_Work.html"> Personal Work </a>
+
+			<a class="desktopMenuItem" href="Professional_Work.html"> Professional Work </a>
 
 			<a class="desktopMenuItem" href="About.html"> About </a>
 
 			<a class="desktopMenuItem" href="Resume.html"> Resume </a>
 
+			<a class="desktopMenuItem" href="Professional_Work_PassGate.html"> Storyboards </a>
 
 		</div>
 
@@ -261,6 +267,7 @@
              |___/                                            
 
 	--------------------------->
+
 	
 
 		<!-------------------------
@@ -269,130 +276,15 @@
 
 		--------------------------->
 
-		<!-------------------------
-
-		Thumbnail Stack
-
-		--------------------------->
-
-
-
-		<h6>
-
-			<b><i> Storyboards </i></b>
-
-		</h6>
-			
-
-		
-
-			<a class='project' href='AfterParty.html'>
-
-				<div>
-
-					<img src='Pages/Storyboards/AfterParty/The_AfterParty.jpg' class='thumbnailImg'>
-
-					<h3>
-
-						The Afterparty
-
-					</h3>
-
-				</div>
-
-			</a>
-
-
-			<a class='project' href='Tuca_And_Bertie.html'>
-
-				<div>
-
-					<img src='Pages/Storyboards/Tuca_And_Bertie/TucaBertie.gif' class='thumbnailImg'>
-
-					<h3>
-
-						Tuca and Bertie
-
-					</h3>
-
-				</div>
-
-			</a>
-
-
-
-			<a class='project' href='Pencilmation.html'>
-
-				<div>
-
-					<img src='Pages/Storyboards/Pencilmation/Pencilmation.gif' class='thumbnailImg'>
-
-					<h3>
-
-						Pencilmation
-
-					</h3>
-
-				</div>
-
-			</a>
-
-
-		</div>
-
-
-
-		
-		<h6>
-
-			<b><i> Animation </i></b>
-
-		</h6>
-
-
-		<a class='project' href='Ballmastrz.html'>
+		<a class='project' href='#'>
 
 			<div>
 
-				<img src='Pages/Professional_Work/Ballmastrz/BM207_A119_v03_JTH_1 (Stitched Clip)_1.gif' class='thumbnailImg'>
+				<img src='Debug/ThumbnailTest3.png' class='thumbnailImg'>
 
 				<h3>
 
-					Ballmastrz_9009
-
-				</h3>
-
-			</div>
-
-		</a>
-
-		<a class='project' href='Kids.html'>
-
-			<div>
-
-				<img src='Pages/Professional_Work/Kids/KDS_7_v3.gif' class='thumbnailImg'>
-
-				<h3>
-
-					Kids
-
-				</h3>
-
-			</div>
-
-		</a>
-
-				</a>
-
-		<a class='project' href='Students_For_Justice.html'>
-
-			<div>
-
-				<img src='Pages/Professional_Work/Students_For_Justice/10_14_2020.gif' class='thumbnailImg'>
-
-				<h3>
-
-					Students For Justice
+					test
 
 				</h3>
 
@@ -401,6 +293,58 @@
 		</a>
 
 
+
+		<a class='project' href='#'>
+
+			<div>
+
+				<img src='Debug/ThumbnailTest3.png' class='thumbnailImg'>
+
+				<h3>
+
+					test
+
+				</h3>
+
+			</div>
+
+		</a>
+
+
+
+		<a class='project' href='#'>
+
+			<div>
+
+				<img src='Debug/ThumbnailTest3.png' class='thumbnailImg'>
+
+				<h3>
+
+					test
+
+				</h3>
+
+			</div>
+
+		</a>
+
+
+
+		<a class='project' href='#'>
+
+			<div>
+
+				<img src='Debug/ThumbnailTest3.png' class='thumbnailImg'>
+
+				<h3>
+
+					test
+
+				</h3>
+
+			</div>
+
+		</a>			
 
 	</body>
 
@@ -411,7 +355,7 @@
 
 			<img style="width:30px;height:30px;" src='socialMediaIcons/CopyrightSymbol.png'>
 
-			<h5> Fred E. Mathelier Jr. - <script>document.write( new Date().getFullYear() );</script> </h5>
+			<h5> Fred E. Mathelier Jr. - <script>document.write( new Date().getFullYear() );</script></h5>
 
 	</div>
 
